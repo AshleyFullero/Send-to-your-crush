@@ -8,21 +8,24 @@ let firstClick = true;
 
 yesBtn.addEventListener("click", () => {
     if (firstClick) {
-        
+     
         question.innerHTML = "Really? I love you too! 😘"; 
-        gif.src = "https://media.tenor.com/images/d5b0c8c3f29cfb2f7be2acbe6232056d/raw"; 
+        gif.src = "https://media.giphy.com/media/3o7aD2saZBHyA4HGFm/giphy.gif"; 
         firstClick = false; 
     } else {
         
         message.innerHTML = "I don’t believe you, where is this love? HUH! Message me ASAP!";
         message.style.display = "block"; 
+        gif.src = "https://media1.tenor.com/m/oZf3_XHoJ1cAAAAC/kiss.gif"; 
     }
 });
+
 
 noBtn.addEventListener("mouseover", () => {
     const wrapper = document.querySelector(".wrapper");
     const wrapperRect = wrapper.getBoundingClientRect();
     const noBtnRect = noBtn.getBoundingClientRect();
+
     
     const maxX = wrapperRect.width - noBtnRect.width;
     const maxY = wrapperRect.height - noBtnRect.height;
@@ -34,6 +37,7 @@ noBtn.addEventListener("mouseover", () => {
     noBtn.style.left = randomX + "px";
     noBtn.style.top = randomY + "px";
 });
+
 
 noBtn.addEventListener("click", (event) => {
     event.preventDefault(); 
