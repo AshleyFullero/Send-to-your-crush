@@ -14,7 +14,7 @@ yesBtn.addEventListener("click", () => {
         firstClick = false; 
     } else {
         
-        message.innerHTML = "I don’t believe you, where is this love? You don't love me anymore?";
+        message.innerHTML = "We're now married";
         message.style.display = "block"; 
         gif.src = "https://media1.tenor.com/m/oZf3_XHoJ1cAAAAC/kiss.gif"; 
     }
