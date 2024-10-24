@@ -14,7 +14,7 @@ yesBtn.addEventListener("click", () => {
         firstClick = false; 
     } else {
         
-        message.innerHTML = "I don’t believe you, where is this love? HUH! You don't love me anymore.";
+        message.innerHTML = "I don’t believe you, where is this love? You don't love me anymore? I made this for you, love, but if you don't respond, I’ll take it as a sign that you're no longer interested. It breaks my heart, but I'll have to make the hardest decision.";
         message.style.display = "block"; 
         gif.src = "https://media1.tenor.com/m/oZf3_XHoJ1cAAAAC/kiss.gif"; 
     }
