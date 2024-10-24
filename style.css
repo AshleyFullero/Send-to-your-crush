@@ -10,7 +10,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: url('https://t4.ftcdn.net/jpg/07/83/37/79/360_F_783377984_a4OWEnNHO5mj5TjCGuL6KZtkB6zSFtsZ.jpg') no-repeat center center fixed; /* Set background image */
-    background-size: cover; /* Cover the entire body with the image */
+    background-size: cover;
 }
 
 .wrapper {
@@ -18,12 +18,12 @@ body {
     width: 100%;
     max-width: 400px;
     text-align: center;
-    color: white; /* Set text color to white */
+    color: white; 
 }
 
 h2 {
-    font-size: 2.5em; /* Increase font size */
-    color: white; /* Ensure font color is white */
+    font-size: 2.5em;
+    color: white; 
     margin: 15px 0;
 }
 
@@ -41,7 +41,7 @@ h2 {
 button {
     width: 150px;
     height: inherit;
-    color: white; /* Set button text color to white */
+    color: white; 
     font-size: 1.2em;
     border-radius: 30px;
     outline: none;
