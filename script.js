@@ -3,13 +3,20 @@ const noBtn = document.querySelector(".no-btn");
 const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
 const message = document.querySelector(".message");
+let firstClick = true; // Track if the first Yes has been clicked
 
 // Change text and gif when the Yes button is clicked
 yesBtn.addEventListener("click", () => {
-    question.innerHTML = "Really? I love you too! 😘"; 
-    gif.src = "https://media.giphy.com/media/2yq9g8uWlX0Ho/giphy.gif"; // Updated GIF URL
-    message.innerHTML = "I don’t believe you, where is this love? HUH! Message me ASAP!";
-    message.style.display = "block"; // Show the message
+    if (firstClick) {
+        // First Yes button click
+        question.innerHTML = "Really? I love you too! 😘"; 
+        gif.src = "https://media1.tenor.com/m/oZf3_XHoJ1cAAAAC/kiss.gif"; // Updated GIF URL
+        firstClick = false; // Set to false to track that the first click has happened
+    } else {
+        // Second Yes button click
+        message.innerHTML = "I don’t believe you, where is this love? HUH! Message me ASAP!";
+        message.style.display = "block"; // Show the message
+    }
 });
 
 // Make the No button move randomly on hover
