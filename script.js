@@ -9,12 +9,12 @@ let firstClick = true;
 yesBtn.addEventListener("click", () => {
     if (firstClick) {
      
-        question.innerHTML = "Really? I love you too! 😘"; 
+        question.innerHTML = "Really? I love you too!"; 
         gif.src = "https://media1.tenor.com/m/oZf3_XHoJ1cAAAAC/kiss.gif"; 
         firstClick = false; 
     } else {
         
-        message.innerHTML = "I don’t believe you, where is this love? HUH! Message me ASAP!";
+        message.innerHTML = "I don’t believe you, where is this love? HUH! You don't love me anymore.";
         message.style.display = "block"; 
         gif.src = "https://media1.tenor.com/m/oZf3_XHoJ1cAAAAC/kiss.gif"; 
     }
