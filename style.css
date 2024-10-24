@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('https://t4.ftcdn.net/jpg/07/83/37/79/360_F_783377984_a4OWEnNHO5mj5TjCGuL6KZtkB6zSFtsZ.jpg') no-repeat center center fixed; /* Background image */
+    background: url('https://afar.brightspotcdn.com/dims4/default/ca21abe/2147483647/strip/false/crop/2000x1125+0+104/resize/1200x675!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fc0%2Fd7%2F999a7a0d498197b219b00115cecb%2Foriginal-lantern-festival-floating.jpg') no-repeat center center fixed; /* Use URL */
     background-size: cover; 
 }
 
@@ -22,8 +22,8 @@ body {
 }
 
 h2 {
-    font-size: 2.5em; 
-    color: white;
+    font-size: 2.5em;
+    color: white; 
     margin: 15px 0;
 }
 
