@@ -9,8 +9,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('https://t4.ftcdn.net/jpg/07/83/37/79/360_F_783377984_a4OWEnNHO5mj5TjCGuL6KZtkB6zSFtsZ.jpg') no-repeat center center fixed; /* Set background image */
-    background-size: cover;
+    background: url('https://t4.ftcdn.net/jpg/07/83/37/79/360_F_783377984_a4OWEnNHO5mj5TjCGuL6KZtkB6zSFtsZ.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; 
 }
 
 .wrapper {
@@ -22,8 +22,8 @@ body {
 }
 
 h2 {
-    font-size: 2.5em;
-    color: white; 
+    font-size: 2.5em; 
+    color: white;
     margin: 15px 0;
 }
 
