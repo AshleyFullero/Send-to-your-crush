@@ -5,23 +5,28 @@ const gif = document.querySelector(".gif");
 
 // Change text and gif when the Yes button is clicked
 yesBtn.addEventListener("click", () => {
-  question.innerHTML = "You got Rickrolled 😘"; 
-  gif.src = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGI1cW5wMWhpaDF5b3pjdTF0OHZrcHJvaGkzOHJteDhmd245OGRnZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Vuw9m5wXviFIQ/giphy.gif";
+    question.innerHTML = "Really? I love you so much, Jenieee! But really?"; 
+    gif.src = "https://tenor.com/view/i-love-you-gif-6865117919852182795";
 });
 
 // Make the No button move randomly on hover
 noBtn.addEventListener("mouseover", () => {
-  const wrapper = document.querySelector(".wrapper");
-  const wrapperRect = wrapper.getBoundingClientRect();
-  const noBtnRect = noBtn.getBoundingClientRect();
+    const wrapper = document.querySelector(".wrapper");
+    const wrapperRect = wrapper.getBoundingClientRect();
+    const noBtnRect = noBtn.getBoundingClientRect();
 
-  // Calculate max positions to ensure the button stays within the wrapper
-  const maxX = wrapperRect.width - noBtnRect.width;
-  const maxY = wrapperRect.height - noBtnRect.height;
+    // Calculate max positions to ensure the button stays within the wrapper
+    const maxX = wrapperRect.width - noBtnRect.width;
+    const maxY = wrapperRect.height - noBtnRect.height;
 
-  const randomX = Math.floor(Math.random() * maxX);
-  const randomY = Math.floor(Math.random() * maxY);
+    const randomX = Math.floor(Math.random() * maxX);
+    const randomY = Math.floor(Math.random() * maxY);
 
-  noBtn.style.left = randomX + "px";
-  noBtn.style.top = randomY + "px";
+    noBtn.style.left = randomX + "px";
+    noBtn.style.top = randomY + "px";
+});
+
+// Prevent the No button from being clicked
+noBtn.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent the default action (if any)
 });
