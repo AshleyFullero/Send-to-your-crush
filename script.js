@@ -2,11 +2,14 @@ const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
+const message = document.querySelector(".message");
 
 // Change text and gif when the Yes button is clicked
 yesBtn.addEventListener("click", () => {
-    question.innerHTML = "Really? I love you so much, Jenieee! But really?"; 
-    gif.src = "https://media.tenor.com/images/3fbd0b206cc0ed9d7e16d14f3941ac3e/tenor.gif"; // Updated GIF URL
+    question.innerHTML = "Really? I love you too! 😘"; 
+    gif.src = "https://media.giphy.com/media/2yq9g8uWlX0Ho/giphy.gif"; // Updated GIF URL
+    message.innerHTML = "I don’t believe you, where is this love? HUH! Message me ASAP!";
+    message.style.display = "block"; // Show the message
 });
 
 // Make the No button move randomly on hover
@@ -25,7 +28,7 @@ noBtn.addEventListener("mouseover", () => {
     noBtn.style.top = randomY + "px";
 });
 
-// Prevent the No button from being clicked
+// Prevent the No button from performing any action
 noBtn.addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent the default action (if any)
+    event.preventDefault(); // Prevent default action
 });
