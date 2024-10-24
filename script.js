@@ -18,12 +18,14 @@ noBtn.addEventListener("mouseover", () => {
     const wrapperRect = wrapper.getBoundingClientRect();
     const noBtnRect = noBtn.getBoundingClientRect();
 
+    // Calculate max positions to ensure the button stays within the wrapper
     const maxX = wrapperRect.width - noBtnRect.width;
     const maxY = wrapperRect.height - noBtnRect.height;
 
     const randomX = Math.floor(Math.random() * maxX);
     const randomY = Math.floor(Math.random() * maxY);
 
+    noBtn.style.position = "absolute"; // Make sure it's positioned absolutely
     noBtn.style.left = randomX + "px";
     noBtn.style.top = randomY + "px";
 });
