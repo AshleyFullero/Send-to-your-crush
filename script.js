@@ -10,7 +10,7 @@ yesBtn.addEventListener("click", () => {
     if (firstClick) {
      
         question.innerHTML = "Really? I love you too! 😘"; 
-        gif.src = "https://media.giphy.com/media/3o7aD2saZBHyA4HGFm/giphy.gif"; 
+        gif.src = "https://media1.tenor.com/m/oZf3_XHoJ1cAAAAC/kiss.gif"; 
         firstClick = false; 
     } else {
         
