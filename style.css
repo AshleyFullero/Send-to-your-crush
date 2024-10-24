@@ -9,8 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('https://c4.wallpaperflare.com/wallpaper/864/948/873/lanterns-tangled-wallpaper-preview.jpg') no-repeat center center fixed; 
-    background-size: cover; 
+    background: midnightblue;
 }
 
 .wrapper {
