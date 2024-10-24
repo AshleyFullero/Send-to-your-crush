@@ -6,7 +6,7 @@ const gif = document.querySelector(".gif");
 // Change text and gif when the Yes button is clicked
 yesBtn.addEventListener("click", () => {
     question.innerHTML = "Really? I love you so much, Jenieee! But really?"; 
-    gif.src = "https://tenor.com/view/i-love-you-gif-6865117919852182795";
+    gif.src = "https://media.tenor.com/images/3fbd0b206cc0ed9d7e16d14f3941ac3e/tenor.gif"; // Updated GIF URL
 });
 
 // Make the No button move randomly on hover
@@ -15,7 +15,6 @@ noBtn.addEventListener("mouseover", () => {
     const wrapperRect = wrapper.getBoundingClientRect();
     const noBtnRect = noBtn.getBoundingClientRect();
 
-    // Calculate max positions to ensure the button stays within the wrapper
     const maxX = wrapperRect.width - noBtnRect.width;
     const maxY = wrapperRect.height - noBtnRect.height;
 
