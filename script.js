@@ -10,7 +10,7 @@ yesBtn.addEventListener("click", () => {
     if (firstClick) {
         // First Yes button click
         question.innerHTML = "Really? I love you too! 😘"; 
-        gif.src = "https://media1.tenor.com/m/oZf3_XHoJ1cAAAAC/kiss.gif"; // Updated GIF URL
+        gif.src = "https://media.giphy.com/media/l0HlPZp2prIhMUM0g/giphy.gif"; // Updated GIF URL
         firstClick = false; // Set to false to track that the first click has happened
     } else {
         // Second Yes button click
